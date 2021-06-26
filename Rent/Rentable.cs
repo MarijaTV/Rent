@@ -8,28 +8,30 @@ namespace Rent
 {
     class Rentable
     {
-        public bool Availabe { get; set; }
+        public bool Available { get; set; }
         public int Beds { get; set; }
         public bool Kitchen { get; set; }
         public bool Shower { get; set; }
         public int Floor { get; set; }
+        public int Number { get; set; }
         public String Name { get; set; }
         public double Price { get; set; }
 
-        public Rentable(int beds, bool kitchen, bool shower, int floor, string name, double price)
+        public Rentable(int beds, bool kitchen, bool shower, int floor, int number, string name, double price)
         {
-            Availabe = true;
+            Available = true;
             Beds = beds;
             Kitchen = kitchen;
             Shower = shower;
             Floor = floor;
+            Number = number;
             Name = name;
             Price = price;
         }
 
         public Rentable()
         {
-            Availabe = true ;
+            Available = true ;
         }
 
         public override bool Equals(object obj)
@@ -45,7 +47,7 @@ namespace Rent
 
         public override string ToString()
         {
-            return "Laisvas: " + Availabe + " lovos: " + Beds + " virtuvė: " + Kitchen + " dušas: " + Shower + " Aukštas: " + Floor + " pavadinimas/numeris: " + Name
+            return "Laisvas: " + Available + " lovos: " + Beds + " virtuvė: " + Kitchen + " dušas: " + Shower + " Aukštas: " + Floor + " numeris: " + Number + "pavadinimas: " + Name
                  + " Kaina: " + Price;
         }
     }
