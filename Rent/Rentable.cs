@@ -47,7 +47,7 @@ namespace Rent
 
         public override string ToString()
         {
-            return "Laisvas: " + Available + " lovos: " + Beds + " virtuvė: " + Kitchen + " dušas: " + Shower + " Aukštas: " + Floor + " numeris: " + Number + "pavadinimas: " + Name
+            return "Laisvas: " + Available + " lovos: " + Beds + " virtuvė: " + Kitchen + " dušas: " + Shower + " Aukštas: " + Floor + " numeris: " + Number + " pavadinimas: " + Name
                  + " Kaina: " + Price;
         }
     }

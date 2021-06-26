@@ -107,10 +107,12 @@ namespace Rent
                         ReceptionControl.printAvailableFloorRooms(hotel, num);
                         break;
                     case "rn":
-                        ReceptionControl.reserveRoom(hotel);
+                        Console.WriteLine("Choose a Small House number");
+                        ReceptionControl.reserveRoom(smallHauses);
                         break;
                     case "rk":
-                        ReceptionControl.reserveRoom(smallHauses);
+                        Console.WriteLine("Choose a Room number");
+                        ReceptionControl.reserveRoom(hotel);
                         break;
                     default:
                         Console.WriteLine("Įveskite teisingus duomenis");
